@@ -1,4 +1,4 @@
-# Create-Local-Admin-Groups
+# Create new Exchange OAuth certificate
  Creates a new Exchange Server Auth (OAuth) Certificate
  
 ## Usage
