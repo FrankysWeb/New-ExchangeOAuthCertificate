@@ -34,7 +34,7 @@ try {
 	write-output "SMTP Domain Name: $SMTPDomainName"
 	$NewOAuthCert = New-ExchangeCertificate -KeySize 2048 -PrivateKeyExportable $true -SubjectName "cn=Microsoft Exchange Server Auth Certificate" -FriendlyName "Microsoft Exchange Server Auth Certificate" -DomainName $SMTPDomainName
 	$NewOAuthCertThumbprint = $NewOAuthCert.Thumbprint
-	write-output = "New Thumbprint: $NewOAuthCertThumbprint"
+	write-output "New Thumbprint: $NewOAuthCertThumbprint"
 } catch {
 	Write-Error -Message $_.Exception.Message
 	exit
